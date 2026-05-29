@@ -2,8 +2,6 @@ streamlit>=1.35
 pandas>=2.2
 numpy>=1.26
 yfinance>=0.2.54
-requests>=2.31
-
 plotly>=5.22
 supabase>=2.7
 python-dotenv>=1.0

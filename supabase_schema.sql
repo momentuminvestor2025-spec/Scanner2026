@@ -4,6 +4,7 @@ create table if not exists nifty_total_market_universe (
   yahoo_symbol text unique,
   sector text,
   exchange text default 'NSE',
+  market_cap numeric,
   created_at timestamptz default now(),
   updated_at timestamptz default now()
 );
@@ -14,6 +15,8 @@ create table if not exists scanner_results (
   symbol text,
   company text,
   yahoo_symbol text,
+  sector text,
+  exchange text,
   price numeric,
   ema10 numeric,
   sma20 numeric,
@@ -23,7 +26,7 @@ create table if not exists scanner_results (
   atr14 numeric,
   atr_pct numeric,
   atr_rs_rank numeric,
-  range_pos20_pct numeric,
+  range_pos_20_pct numeric,
   rs_rank_1w numeric,
   rs_rank_1m numeric,
   rs_rank_3m numeric,
