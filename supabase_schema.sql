@@ -1,0 +1,39 @@
+create table if not exists nifty_total_market_universe (
+  symbol text primary key,
+  company text,
+  yahoo_symbol text unique,
+  sector text,
+  exchange text default 'NSE',
+  created_at timestamptz default now(),
+  updated_at timestamptz default now()
+);
+
+create table if not exists scanner_results (
+  id bigserial primary key,
+  run_id text,
+  symbol text,
+  company text,
+  yahoo_symbol text,
+  price numeric,
+  ema10 numeric,
+  sma20 numeric,
+  sma50 numeric,
+  sma100 numeric,
+  sma200 numeric,
+  atr14 numeric,
+  atr_pct numeric,
+  atr_rs_rank numeric,
+  range_pos20_pct numeric,
+  rs_rank_1w numeric,
+  rs_rank_1m numeric,
+  rs_rank_3m numeric,
+  rs_rank_6m numeric,
+  trend_stack boolean,
+  rs_pass boolean,
+  atr_rs_pass boolean,
+  range_pass boolean,
+  mcap_pass boolean,
+  all_pass boolean,
+  market_cap numeric,
+  created_at timestamptz default now()
+);
