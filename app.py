@@ -9,7 +9,7 @@ from supabase import create_client
 st.set_page_config(page_title="Nifty Total Market 750 Scanner", layout="wide")
 
 def create_supabase_client():
-    return create_client(st.secrets["SUPABASE_URL"], st.secrets["SUPABASE_ANON_KEY"])
+    return create_client(st.secrets["https://qlzgjloxdpwrrdkbwtkf.supabase.co/rest/v1/"], st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFsemdqbG94ZHB3cnJka2J3dGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4OTI5MzQsImV4cCI6MjA5NTQ2ODkzNH0.WLPRaeNFTLwfjkvqVSmF7MvMhsIq7WAiZ6z9QdVxltY"])
 
 def extract_ohlc(price_data, symbol):
     if isinstance(price_data.columns, pd.MultiIndex):
