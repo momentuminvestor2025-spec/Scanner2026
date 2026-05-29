@@ -1,2 +1,2 @@
-SUPABASE_URL="postgresql://postgres.qlzgjloxdpwrrdkbwtkf:TXR0xujrBXymMTlx@aws-1-ap-southeast-1.pooler.supabase.com:6543/postgres"
-SUPABASE_ANON_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFsemdqbG94ZHB3cnJka2J3dGtmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzk4OTI5MzQsImV4cCI6MjA5NTQ2ODkzNH0.WLPRaeNFTLwfjkvqVSmF7MvMhsIq7WAiZ6z9QdVxltY"
+SUPABASE_URL=
+SUPABASE_KEY=
