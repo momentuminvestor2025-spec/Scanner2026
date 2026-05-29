@@ -143,7 +143,7 @@ with tab1:
 with tab2:
     st.subheader("Results")
     supabase = create_supabase_client()
-    resp = supabase.table("scanner_results").select("*").order("created_at", desc=True).limit(500).execute()
+    resp = supabase.table("scanner_results").select("*").limit(500).execute()
     df = pd.DataFrame(resp.data or [])
     if df.empty:
         st.info("No stored results found.")
